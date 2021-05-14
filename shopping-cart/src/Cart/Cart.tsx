@@ -3,7 +3,6 @@ import CartItem from "../CartItem/CartItem";
 import { Wrapper } from "./Cart.style";
 
 import { CartItemType } from "../App";
-import { PermDeviceInformation } from "@material-ui/icons";
 
 type Props = {
   cartItems: CartItemType[];
