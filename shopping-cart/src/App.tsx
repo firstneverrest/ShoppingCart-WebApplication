@@ -4,6 +4,7 @@ import { useQuery } from "react-query";
 import Drawer from "@material-ui/core/Drawer";
 import LinearProgress from "@material-ui/core/LinearProgress";
 import Grid from "@material-ui/core/Grid";
+import { createMuiTheme, ThemeProvider } from "@material-ui/core";
 
 import { Wrapper } from "./App.styles";
 import Item from "./Item/Item";
@@ -20,6 +21,18 @@ export type CartItemType = {
   title: string;
   amount: number;
 };
+
+const theme = createMuiTheme({
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 700,
+      md: 960,
+      lg: 1280,
+      xl: 1920,
+    },
+  },
+});
 
 // send request to fake store api
 const getProducts = async (): Promise<CartItemType[]> =>
@@ -76,7 +89,7 @@ const App = () => {
   if (error) return <div>Something went wrong ...</div>;
 
   return (
-    <React.Fragment>
+    <ThemeProvider theme={theme}>
       <NavigationBar
         setCartOpenHandler={cartOpenHandler}
         getTotalItems={getTotalItems}
@@ -94,20 +107,15 @@ const App = () => {
             removeFromCart={handleRemoveFromCart}
           />
         </Drawer>
-        {/* <StyledButton onClick={() => setCartOpen(true)}>
-          <Badge badgeContent={getTotalItems(cartItems)} color="error">
-            <AddShoppingCartIcon />
-          </Badge>
-        </StyledButton> */}
         <Grid container spacing={3}>
           {data?.map((item) => (
-            <Grid item key={item.id} xs={12} sm={4}>
+            <Grid item key={item.id} xs={12} sm={6} md={4}>
               <Item item={item} handleAddToCart={handleAddToCart} />
             </Grid>
           ))}
         </Grid>
       </Wrapper>
-    </React.Fragment>
+    </ThemeProvider>
   );
 };
 
