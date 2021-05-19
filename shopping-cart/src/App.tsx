@@ -27,9 +27,14 @@ const theme = createMuiTheme({
     values: {
       xs: 0,
       sm: 700,
-      md: 960,
+      md: 1100,
       lg: 1280,
       xl: 1920,
+    },
+  },
+  palette: {
+    primary: {
+      main: "#ffd700",
     },
   },
 });
@@ -115,6 +120,7 @@ const App = () => {
           ))}
         </Grid>
       </Wrapper>
+      <p className="copyright">Copyright 2021 Chitsanupong Tangvasinkul</p>
     </ThemeProvider>
   );
 };

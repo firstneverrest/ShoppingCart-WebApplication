@@ -19,7 +19,7 @@ const Item: React.FC<Props> = ({ item, handleAddToCart }) => {
           <h3>{item.title}</h3>
           <p>{item.description}</p>
         </div>
-        <h3>${item.price}</h3>
+        <h1>${item.price}</h1>
       </div>
       <Button
         className="button-add"
