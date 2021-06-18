@@ -102,7 +102,7 @@ const App = () => {
       />
       <Wrapper>
         <Drawer
-          anchor="right"
+          anchor='right'
           open={cartOpen}
           onClose={() => setCartOpen(false)}
         >
@@ -119,8 +119,8 @@ const App = () => {
             </Grid>
           ))}
         </Grid>
+        <p className='copyright'>Copyright 2021 Chitsanupong Tangvasinkul</p>
       </Wrapper>
-      <p className="copyright">Copyright 2021 Chitsanupong Tangvasinkul</p>
     </ThemeProvider>
   );
 };
