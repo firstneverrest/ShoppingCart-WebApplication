@@ -29,7 +29,7 @@ Shopping Cart web application is created to practising how to use TypeScript and
 
 ### Description
 
-- 20 products are displayed on the website
+- 20 products are displayed on the website with Fake Store API and react-query
 - purchase the product by clicking add to cart button
 - whenever you click add to cart, the amount of products will be appeared at the cart icon in the top-right corner.
 - click the cart icon to see what products you added
