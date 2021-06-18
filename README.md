@@ -36,5 +36,5 @@ Shopping Cart web application is created to practising how to use TypeScript and
 - the aside bar will appear from the right to show everything you added.
 - you can add more or remove the product that you added.
 - the total is calculated and show in the bottom of the aside bar.
-- use material UI and styled-component to design all of the component
+- use material UI and styled-component to design all of the components
 - full responsive website
