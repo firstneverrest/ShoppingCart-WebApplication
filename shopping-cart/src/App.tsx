@@ -102,7 +102,7 @@ const App = () => {
       />
       <Wrapper>
         <Drawer
-          anchor='right'
+          anchor="right"
           open={cartOpen}
           onClose={() => setCartOpen(false)}
         >
@@ -112,6 +112,7 @@ const App = () => {
             removeFromCart={handleRemoveFromCart}
           />
         </Drawer>
+        <h2>All Products</h2>
         <Grid container spacing={3}>
           {data?.map((item) => (
             <Grid item key={item.id} xs={12} sm={6} md={4}>
@@ -119,7 +120,7 @@ const App = () => {
             </Grid>
           ))}
         </Grid>
-        <p className='copyright'>Copyright 2021 Chitsanupong Tangvasinkul</p>
+        <p className="copyright">Copyright 2021 Chitsanupong Tangvasinkul</p>
       </Wrapper>
     </ThemeProvider>
   );
