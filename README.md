@@ -2,7 +2,7 @@
 
 # Shopping Cart Web Application
 
-![image](shopping-cart/src/img/shopping-cart-thumbnail.png)
+![image](shopping-cart/src/img/shopping-cart-thumbnail.jpg)
 
 Shopping Cart web application is created to practising how to use TypeScript and Material UI. It displayed 20 products which be fetched from Fake Store API. After I had done this work, I found many advantages when using TypeScript. It maybe hard in the first time because you have to write type of almost everything when you want to define something. However, it make sure that the error in your project will decrease dramatically. This also my first time using styled component and it totally amazing with their reusability and convenience.
 
